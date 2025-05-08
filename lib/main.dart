@@ -1,26 +1,18 @@
 import "package:flutter/material.dart";
+import 'home.dart';
 
 void main() {
-  runApp(Grocery());
+  runApp(MyApp());
 }
 
-class Grocery extends StatefulWidget {
-  const Grocery({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
-  @override
-  State<Grocery> createState() => _GroceryState();
-}
-
-class _GroceryState extends State<Grocery> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text("Grocery"),
-        ),
-      ),
+      home: HomePage(),
     );
   }
 }
