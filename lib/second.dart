@@ -15,6 +15,13 @@ class _SecondState extends State<Second> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        backgroundColor: Colors.blue,
+        foregroundColor: Colors.white,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(50)),
+        child: Icon(Icons.shopping_bag),
+      ),
       body: SafeArea(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -60,8 +67,9 @@ class _SecondState extends State<Second> {
               builder: (context, value, child) {
                 return GridView.builder(
                     itemCount: value.shopItems.length,
+                    padding: EdgeInsets.all(12),
                     gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                        crossAxisCount: 2),
+                        crossAxisCount: 2, childAspectRatio: 1 / 0.9),
                     itemBuilder: (context, index) {
                       return GroceryItemTile(
                           itemName: value.shopItems[index][0],
