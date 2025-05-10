@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+import 'package:flutter_first/second.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class HomePage extends StatefulWidget {
@@ -17,7 +17,9 @@ class _HomePageState extends State<HomePage> {
         children: [
           Padding(
             padding: EdgeInsets.fromLTRB(40, 20, 40, 0),
-            child: Image.asset("assets/images/pear.png"),
+            child: Image.asset(
+              "assets/images/pear.png",
+            ),
           ),
           Padding(
             padding: EdgeInsets.all(24),
