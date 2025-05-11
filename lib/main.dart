@@ -1,5 +1,6 @@
 import "package:flutter/material.dart";
 import 'package:flutter_first/cart_model.dart';
+import 'package:flutter_first/home.dart';
 import 'package:flutter_first/second.dart';
 import 'package:provider/provider.dart';
 
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
       create: (context) => CartModel(),
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: Second(),
+        home: HomePage(),
       ),
     );
   }

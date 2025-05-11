@@ -18,7 +18,7 @@ class _HomePageState extends State<HomePage> {
           Padding(
             padding: EdgeInsets.fromLTRB(40, 20, 40, 0),
             child: Image.asset(
-              "assets/images/pear.png",
+              "assets/images/grapes.png",
             ),
           ),
           Padding(
