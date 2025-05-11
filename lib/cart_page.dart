@@ -36,7 +36,13 @@ class CartPage extends StatelessWidget {
                               ),
                               title: Text(value.cartItem[index][0]),
                               subtitle: Text("\$" + value.cartItem[index][1]),
-                              trailing: Icon(Icons.cancel),
+                              trailing: IconButton(
+                                icon: Icon(Icons.cancel),
+                                onPressed: () {
+                                  value.removeItemToCard(index);
+                                },
+                              ),
+                              iconColor: Colors.redAccent,
                             ),
                           ),
                         );
