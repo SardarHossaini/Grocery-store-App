@@ -5,12 +5,15 @@ class GroceryItemTile extends StatelessWidget {
   final String itemPrice;
   final String imagePath;
   final color;
+  final Function()? onPressed;
   const GroceryItemTile(
       {super.key,
       required this.itemName,
       required this.itemPrice,
       required this.imagePath,
-      required this.color});
+      required this.color,
+      required this.onPressed
+      });
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +32,7 @@ class GroceryItemTile extends StatelessWidget {
             ),
             Text(itemName),
             ElevatedButton(
-                onPressed: () {},
+                onPressed: onPressed,
                 style: ElevatedButton.styleFrom(
                     backgroundColor: color, foregroundColor: Colors.white),
                 child: Text(itemPrice))
