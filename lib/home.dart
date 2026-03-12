@@ -26,10 +26,6 @@ class _HomePageState extends State<HomePage> {
             child: Text(
               "We deliver groceries at your doorsite",
               textAlign: TextAlign.center,
-              style: GoogleFonts.notoSerif(
-                fontSize: 36,
-                fontWeight: FontWeight.bold,
-              ),
             ),
           ),
           Text(
@@ -38,14 +34,12 @@ class _HomePageState extends State<HomePage> {
           ),
           const Spacer(),
           GestureDetector(
-            onTap: () => Navigator.pushReplacement(context,
-                MaterialPageRoute(builder: (context) {
+            onTap: () => Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) {
               return Second();
             })),
             child: Container(
-              decoration: BoxDecoration(
-                  color: Colors.deepPurple,
-                  borderRadius: BorderRadius.circular(12)),
+              decoration:
+                  BoxDecoration(color: Colors.deepPurple, borderRadius: BorderRadius.circular(12)),
               padding: EdgeInsets.all(16),
               child: Text(
                 "Get Started",
