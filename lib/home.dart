@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_first/second.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});

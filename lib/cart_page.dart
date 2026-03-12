@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_first/cart_model.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 
 class CartPage extends StatelessWidget {
@@ -24,11 +23,7 @@ class CartPage extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 24),
                 child: Text(
-                  "My Cart",
-                  style: GoogleFonts.notoSerif(
-                    fontSize: 36,
-                    fontWeight: FontWeight.bold,
-                  ),
+                  "My Cart", 
                 ),
               ),
               Expanded(

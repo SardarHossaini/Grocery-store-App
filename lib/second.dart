@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_first/cart_model.dart';
 import 'package:flutter_first/cart_page.dart';
 import 'package:flutter_first/grocery_item_tile.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 
 class Second extends StatefulWidget {
@@ -45,10 +44,6 @@ class _SecondState extends State<Second> {
               padding: const EdgeInsets.symmetric(horizontal: 24),
               child: Text(
                 "Let's order fresh item for you",
-                style: GoogleFonts.notoSerif(
-                  fontSize: 36,
-                  fontWeight: FontWeight.bold,
-                ),
               ),
             ),
             SizedBox(
@@ -82,8 +77,7 @@ class _SecondState extends State<Second> {
                         imagePath: value.shopItems[index][2],
                         color: value.shopItems[index][3],
                         onPressed: () {
-                          Provider.of<CartModel>(context, listen: false)
-                              .addItemToCart(index);
+                          Provider.of<CartModel>(context, listen: false).addItemToCart(index);
                         },
                       );
                     });
